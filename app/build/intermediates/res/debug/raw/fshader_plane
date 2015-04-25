@@ -1,0 +1,39 @@
+precision mediump float;
+
+uniform sampler2D texture1;
+varying vec2 tCoord;
+
+varying float dist0;
+varying float dist1;
+varying float dist2;
+varying float dist3;
+
+varying float elps0;
+varying float elps1;
+varying float elps2;
+varying float elps3;
+
+void main() {
+	
+	float d = dist0;
+	float t = elps0;
+	
+	if(d > dist1){
+		d = dist1;
+		t = elps1;
+	}
+	
+	if(d > dist2){
+		d = dist2;
+		t = elps2;
+	}
+	
+	if(d > dist3){
+		d = dist3;
+		t = elps3;
+	}
+	
+	// 
+	
+	gl_FragColor = mix(texture2D(texture1, tCoord), vec4(1.0, 0.0, 0.0, 1.0), min(1.0, max(0.0, 1.5/((d-0.667)*(t+2.0)))));
+}

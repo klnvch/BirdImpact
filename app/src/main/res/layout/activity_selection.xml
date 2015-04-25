@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+	android:paddingBottom="10dp"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/button_free">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+		android:paddingRight="5dp"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:background="@color/button_free">
+        
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:src="@drawable/mountains" />
+        
+        <View
+            android:id="@+id/view12"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/button_focused" />
+
+        <Button
+            android:id="@+id/buttonMountains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_menu_button"
+            android:text="@string/selection_mountains"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_button_text_size" />
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_above="@+id/buttonMountains"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/button_focused" />
+        
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+		android:paddingLeft="5dp"
+    	android:layout_weight="1"
+    	android:gravity="center"
+    	android:background="@color/button_free">
+        
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view21"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:src="@drawable/hills" />
+        
+        <View
+            android:id="@+id/view22"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/button_focused" />
+
+        <Button
+            android:id="@+id/buttonHills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view22"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_menu_button"
+            android:text="@string/selection_hills"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_button_text_size" />
+
+        <View
+            android:id="@+id/view21"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_above="@+id/buttonHills"
+            android:layout_alignParentRight="true"
+            android:background="@color/button_focused" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

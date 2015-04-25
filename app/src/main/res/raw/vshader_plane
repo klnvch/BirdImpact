@@ -1,0 +1,35 @@
+uniform mat4 uMVPMatrix;
+uniform vec4 uExplosion[4];
+uniform float uElapsedTime[4];
+
+attribute vec4 aPosition;
+attribute vec2 textureCoord;
+varying vec2 tCoord;
+
+varying float dist0;
+varying float dist1;
+varying float dist2;
+varying float dist3;
+
+varying float elps0;
+varying float elps1;
+varying float elps2;
+varying float elps3;
+
+void main() {
+	tCoord = textureCoord;
+	
+	elps0 = uElapsedTime[0];
+	elps1 = uElapsedTime[1];
+	elps2 = uElapsedTime[2];
+	elps3 = uElapsedTime[3];
+	
+	dist0 = distance(vec3(aPosition), vec3(uExplosion[0]));
+	dist1 = distance(vec3(aPosition), vec3(uExplosion[1]));
+	dist2 = distance(vec3(aPosition), vec3(uExplosion[2]));
+	dist3 = distance(vec3(aPosition), vec3(uExplosion[3]));
+	
+	gl_Position = uMVPMatrix * aPosition;
+	
+	
+}

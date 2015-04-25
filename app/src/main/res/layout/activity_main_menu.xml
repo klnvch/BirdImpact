@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/button_free">
+
+    <TextView 
+       	android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="2"
+		android:gravity="center"
+		android:text="@string/main_menu_mission"
+		android:textColor="@color/white"
+		android:textSize="@dimen/main_menu_mission"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+        
+        <View 
+    		android:layout_width="match_parent"
+    		android:layout_height="4dp" 
+    		android:background="@color/button_focused"/>
+
+        <Button
+            android:id="@+id/buttonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_button_text_size"
+            android:text="@string/main_menu_settings"
+            android:background="@drawable/main_menu_button"
+            android:drawableRight="@drawable/ic_menu_settings_holo_light" />
+        
+        <View 
+    		android:layout_width="match_parent"
+    		android:layout_height="4dp" 
+    		android:background="@color/button_focused"/>
+
+        <Button
+            android:id="@+id/buttonScores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_button_text_size"
+            android:text="@string/main_menu_scores"
+            android:background="@drawable/main_menu_button"
+            android:drawableRight="@drawable/ic_menu_star" />
+        
+        <View 
+    		android:layout_width="match_parent"
+    		android:layout_height="4dp" 
+    		android:background="@color/button_focused"/>
+
+        <Button
+            android:id="@+id/buttonNewGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_menu_button_text_size"
+            android:text="@string/main_menu_new_game"
+            android:background="@drawable/main_menu_button"
+            android:drawableRight="@android:drawable/ic_media_play" />
+        
+        <View 
+    		android:layout_width="match_parent"
+    		android:layout_height="4dp" 
+    		android:background="@color/button_focused"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

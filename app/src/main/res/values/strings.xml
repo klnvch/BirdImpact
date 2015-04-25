@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bird Impact</string>
+    
+    <string name="main_menu_mission">According to preliminary information from Intelligence, a mean enemy has infected migrating birds with dangerous viruses to destroy our prosperous Country.\nDefeat every bird to save our Homeland from a biological disaster!</string>
+    <string name="main_menu_settings">SETTINGS</string>
+    <string name="main_menu_scores">SCORES</string>
+    <string name="main_menu_new_game">PLAY</string>
+    <string name="settings_sound">SOUND</string>
+    <string name="settings_vibration">VIBRATION</string>
+    <string name="settings_control">CONTROL</string>
+    <string name="scores_number">#</string>
+    <string name="scores_name">Date</string>
+    <string name="scores_killed_birds">Birds</string>
+    <string name="scores_time_spent">Time</string>
+    <string name="scores_terrain_type">Terrain</string>
+    <string name="selection_mountains">Mountains</string>
+    <string name="selection_hills">Hills</string>
+    <string name="play_resume">RESUME</string>
+    <string name="play_mainmenu">MAIN MENU</string>
+    <string name="main_speed_up">SPEED UP 10%</string>
+
+</resources>

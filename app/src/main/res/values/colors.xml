@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="button_free">#1A2022</color>
+    <color name="button_focused">#3C4044</color>
+    <color name="button_pressed">#464A4E</color>
+
+</resources>

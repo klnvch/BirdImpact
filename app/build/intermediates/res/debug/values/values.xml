@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/AndroidStudioProjects/BirdImpact/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black">#00000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="button_focused">#3C4044</color>
+    <color name="button_free">#1A2022</color>
+    <color name="button_pressed">#464A4E</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/></declare-styleable>
+    <!-- From: file:/E:/AndroidStudioProjects/BirdImpact/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="main_menu_button_text_size">42sp</dimen>
+    <dimen name="main_menu_mission">16sp</dimen>
+    <dimen name="scores_text_size">24sp</dimen>
+    <!-- From: file:/E:/AndroidStudioProjects/BirdImpact/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Bird Impact</string>
+    <string name="main_menu_mission">According to preliminary information from Intelligence, a mean enemy has infected migrating birds with dangerous viruses to destroy our prosperous Country.\nDefeat every bird to save our Homeland from a biological disaster!</string>
+    <string name="main_menu_new_game">PLAY</string>
+    <string name="main_menu_scores">SCORES</string>
+    <string name="main_menu_settings">SETTINGS</string>
+    <string name="main_speed_up">SPEED UP 10%</string>
+    <string name="play_mainmenu">MAIN MENU</string>
+    <string name="play_resume">RESUME</string>
+    <string name="scores_killed_birds">Birds</string>
+    <string name="scores_name">Date</string>
+    <string name="scores_number">#</string>
+    <string name="scores_terrain_type">Terrain</string>
+    <string name="scores_time_spent">Time</string>
+    <string name="selection_hills">Hills</string>
+    <string name="selection_mountains">Mountains</string>
+    <string name="settings_control">CONTROL</string>
+    <string name="settings_sound">SOUND</string>
+    <string name="settings_vibration">VIBRATION</string>
+    <!-- From: file:/E:/AndroidStudioProjects/BirdImpact/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+</resources>
